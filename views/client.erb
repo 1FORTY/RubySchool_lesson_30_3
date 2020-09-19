@@ -7,13 +7,10 @@
   <title>BarberShopHQ</title>
 </head>
 <body>
-  <h2>Список записавшихся: </h2>
+  <h2>Client page: </h2>
 
-  <% @client.each do |client| %>
-    <p>
-      <a href="/client/<%= client.id %>"><%= client.name %></a>
-    </p>
-  <% end %>
+  <p>Имя: <%= @client.name %></p>
+  <p>Телефон: <%= @client.phone %></p>
+  <p>Дата записи: <%= @client.datestamp %></p>
 </body>
 </html>
-
