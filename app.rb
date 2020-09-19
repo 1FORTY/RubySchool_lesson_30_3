@@ -35,7 +35,7 @@ post '/visit' do
   if c.save
     erb "Спасибо, вы записаны."
   else
-    @error = c.errors.full_message.first
+    @error = c.errors.full_messages.first # Запомнить это .errors.full_messages.first !!!
     erb :visit
   end
 end
