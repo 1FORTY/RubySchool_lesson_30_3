@@ -25,6 +25,7 @@ get '/' do
 end
 
 get '/visit' do
+  @c = Client.last
 
   erb :visit
 end
